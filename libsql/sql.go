@@ -348,7 +348,7 @@ func (d Driver) Open(dbUrl string) (driver.Conn, error) {
 }
 
 func init() {
-	sql.Register("libsql", Driver{})
+	sql.Register("libsql-non-embedded", Driver{})
 }
 
 // backported from Go 1.21
